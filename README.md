@@ -20,14 +20,14 @@ This Power BI project explores and visualizes hospital records to uncover trends
 
 ## 📁 Data Source
 
-Relational database consisting of the following tables:
+The project uses a structured relational database designed to store healthcare-related records. It includes the following tables:
 
 | **Table Name**       | **Description** |
 |----------------------|-----------------|
-| `patients`           | Patient demographics: `patient_id`, `date_of_birth`, `gender`, `province_name`, `is_obese` |
-| `admissions`         | Admission records: `admission_id`, `patient_id`, `doctor_id`, `admission_date`, `discharge_date` |
-| `doctors`            | Doctor details: `doctor_id`, `doctor_name`, `specialty` |
-| `province_names`     | Reference table for patient province names and mapping |
+| `patients`       | Stores personal and health-related details of each patient such as name, gender, birth date, height, weight, allergies, and the province they                       belong to. |
+| `admissions`     | Records hospital visits, including when patients were admitted and discharged, along with their diagnosis and the doctor assigned. |
+| `doctors`        | Contains information about doctors, including their names and areas of medical specialization. |
+| `province_names` | A reference table that maps province IDs to their actual province names, useful for grouping and regional analysis. |
 
 
 ## 🔎 Business Problem
@@ -47,8 +47,6 @@ To design an interactive dashboard that presents key patient and hospital insigh
 👥 **Pie Chart:** Gender-wise distribution  
 📅 **Bar Chart:** Age Group-wise Admission Analysis  
 ⚖️ **Table:** Obesity Status among patients  
-🔄 **Slicers:** Gender, Province, Age Group filters for interactive drill-down
-
 
 ## 💼 Business Impact & Insights
 
